@@ -1,0 +1,6 @@
+[Unit]
+Description=Notify the user due to low battery
+
+[Service]
+Type=oneshot
+ExecStart=/home/itsmexxie/.config/lowbat/notify.sh
