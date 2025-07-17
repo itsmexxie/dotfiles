@@ -50,3 +50,10 @@ alias ls="ls --color"
 alias ssh="kitten ssh"
 alias s="kitten ssh"
 alias nnn="NNN_FIFO='/tmp/nnn.fifo' NNN_PLUG='p:preview-tui;r:qpdfrotate' nnn -P p"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Created by `pipx` on 2025-06-02 23:58:47
+export PATH="$PATH:/home/itsmexxie/.local/bin"
