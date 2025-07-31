@@ -2,7 +2,7 @@
 	defaultBranch = main
 [user]
 	name = itsmexxie
-	email = wendy.plaskova05@gmail.com
+	email = itsmexxie@proton.me
         signingKey = ~/.ssh/id_ed25519.pub
 [gpg]
         format = ssh
