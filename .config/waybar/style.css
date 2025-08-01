@@ -1,0 +1,46 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 10px;
+}
+
+#waybar {
+    background: transparent;
+    color: @text;
+    font-family: "NotoSans Nerd Font";
+}
+
+#window {
+    padding: 8px;
+    background: @base;
+    border-radius: 10px;
+}
+
+#workspaces {
+    background: @base;
+}
+
+#workspaces button.active {
+    border-top: 2px solid @mauve;
+    border-bottom: 2px solid @mauve;
+    border-radius: 0px;
+}
+
+#tray, #language, #network, #wireplumber, #battery, #clock {
+    padding: 0px 8px;
+    background: @base;
+    border-radius: 10px;
+}
+
+#clock {
+    background: @green;
+    color: @base;
+}
+
+#custom-power {
+    padding: 0 8px;
+    background: @maroon;
+    border-radius: 10px;
+    color: @base;
+}
