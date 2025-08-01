@@ -1,6 +1,5 @@
 {
     "layer": "top",
-    "margin": "16 16 0 16",
     "spacing": 8,
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],

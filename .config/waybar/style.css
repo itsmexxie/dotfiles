@@ -2,45 +2,39 @@
 
 * {
     border: none;
-    border-radius: 10px;
 }
 
 #waybar {
     background: transparent;
     color: @text;
+    background: @base;
     font-family: "NotoSans Nerd Font";
 }
 
-#window {
-    padding: 8px;
-    background: @base;
-    border-radius: 10px;
-}
-
-#workspaces {
-    background: @base;
-}
-
-#workspaces button.active {
-    border-top: 2px solid @mauve;
-    border-bottom: 2px solid @mauve;
-    border-radius: 0px;
+#window, #workspaces, #tray, #language, #network, #wireplumber, #battery {
+  border-top: 2px solid @text;
 }
 
 #tray, #language, #network, #wireplumber, #battery, #clock {
     padding: 0px 8px;
-    background: @base;
-    border-radius: 10px;
+}
+
+#window {
+  padding: 8px;
+}
+
+#workspaces button.active {
+    border-top: 2px solid @mauve;
+    border-radius: 0px;
 }
 
 #clock {
-    background: @green;
-    color: @base;
+    border-top: 2px solid @green;
+    color: @green;
 }
 
 #custom-power {
     padding: 0 8px;
-    background: @maroon;
-    border-radius: 10px;
-    color: @base;
+    border-top: 2px solid @maroon;
+    color: @maroon;
 }
