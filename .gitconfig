@@ -9,7 +9,7 @@
 [commit]
         gpgsign = true
 [tag]
-        gpgsign = true
+#        gpgsign = true
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/git/allowed_signers
 [core]

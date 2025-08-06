@@ -52,6 +52,7 @@ alias phpdoc="docker run --rm -v $(pwd):/data phpdoc/phpdoc:3"
 alias ssh="kitten ssh"
 alias s="kitten ssh"
 alias xcd='cd "$(xplr --print-pwd-as-result)"'
+alias phpdoc="docker run --rm -v ${PWD}:/data phpdoc/phpdoc:3"
 
 # .local/bin
 export PATH="$PATH:/home/itsmexxie/.local/bin"
