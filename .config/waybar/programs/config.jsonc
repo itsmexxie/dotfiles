@@ -1,0 +1,17 @@
+{
+  "include": "~/.config/waybar/default.jsonc",
+  "position": "bottom",
+  "modules-left": ["hyprland/window"],
+  "modules-right": ["tray", "hyprland/language"],
+  "hyprland/window": {
+    "format": "{}",
+    "rewrite": {
+      "(.*) — Mozilla Firefox": "🌎 $1",
+      "spotify_player": "Spotify"
+    },
+    "separate-outputs": true
+  },
+  "hyprland/language": {
+    "format": "󰌌 {}"
+  }
+}

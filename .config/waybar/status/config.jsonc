@@ -1,0 +1,58 @@
+{
+  "include": "~/.config/waybar/default.jsonc",
+  "layer": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": [
+    "network",
+    "wireplumber",
+    "temperature",
+    "cpu",
+    "memory",
+    "battery",
+    "clock",
+    "custom/power"
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "sort-by-number": true
+  },
+  "hyprland/language": {
+    "format": "󰌌 {}"
+  },
+  "network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "format-wifi": "{essid} {icon}",
+    "format-ethernet": "󰈁",
+    "format-disconnected": "", //An empty format will hide the module.
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "max-length": 50
+  },
+  "wireplumber": {
+    "format": "{volume}% 󰕾",
+    "format-muted": ""
+  },
+  "temperature": {
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "cpu": {
+    "format": "{usage}% "
+  },
+  "memory": {
+    "format": "{used} / {total} GB ({percentage}%)  "
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰢝",
+    "format-plugged": "{capacity}% 󰚥",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+  "clock": {
+    "format": "{0:%H:%M} 󰅐"
+  },
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "bash ~/.config/waybar/power.sh"
+  }
+}
