@@ -3,6 +3,7 @@ include "layout.kdl"
 include "animations.kdl"
 include "binds.kdl"
 include "windows.kdl"
+include "startup.kdl"
 
 debug {
     honor-xdg-activation-with-invalid-serial
@@ -16,12 +17,6 @@ screenshot-path "~/pictures/screenshots/screenshot from %Y-%m-%d %H-%M-%S.png"
 
 hotkey-overlay {
     skip-at-startup
-}
-
-overview {
-    workspace-shadow {
-        off
-    }
 }
 
 // Override to disable super+tab

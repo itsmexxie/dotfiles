@@ -1,3 +1,5 @@
-spawn-sh-at-startup "waybar -c ~/.config/waybar/status/config.jsonc -s ~/.config/waybar/status/style.css"
-spawn-sh-at-startup "waybar -c ~/.config/waybar/programs/config.jsonc -s ~/.config/waybar/programs/style.css"
-spawn-sh-at-startup "swaybg -i ~/.config/wallpapers/david-revoy-01.jpg"
+// spawn-sh-at-startup "waybar -c ~/.config/waybar/status/config.jsonc -s ~/.config/waybar/status/style.css"
+// spawn-sh-at-startup "waybar -c ~/.config/waybar/programs/config.jsonc -s ~/.config/waybar/programs/style.css"
+// spawn-sh-at-startup "swaybg -i ~/.config/wallpapers/david-revoy-01.jpg"
+
+spawn-at-startup "qs" "-c" "noctalia-shell"

@@ -1,3 +1,8 @@
 binds {
     Mod+W hotkey-overlay-title="Open a terminal" { spawn "kitty"; }
+
+    // Core Noctalia binds
+    Mod+Space { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+S { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
+    Mod+Comma { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
 }
