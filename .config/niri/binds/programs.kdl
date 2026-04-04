@@ -1,0 +1,3 @@
+binds {
+    Mod+W hotkey-overlay-title="Open a terminal" { spawn "kitty"; }
+}

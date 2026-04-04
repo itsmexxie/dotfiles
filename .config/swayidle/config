@@ -1,2 +1,5 @@
-timeout 300 "hyprctl dispatch dpms off" resume "hyprctl dispatch dpms on"
-timeout 600 "systemctl suspend"
+lock "pid hyprlock || hyprlock"
+
+timeout 300 "loginctl lock-session"
+timeout 330 "hyprctl dispatch dpms off" resume "hyprctl dispatch dpms on"
+

@@ -4,6 +4,7 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-right": [
     "network",
+    "backlight",
     "wireplumber",
     "temperature",
     "cpu",
@@ -28,6 +29,11 @@
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
     "max-length": 50
   },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
+  },
   "wireplumber": {
     "format": "{volume}% 󰕾",
     "format-muted": ""
@@ -40,7 +46,7 @@
     "format": "{usage}% "
   },
   "memory": {
-    "format": "{used} / {total} GB ({percentage}%)  "
+    "format": "{used} / {total} GB ({percentage}%) "
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -53,6 +59,6 @@
   },
   "custom/power": {
     "format": "󰐥",
-    "on-click": "bash ~/.config/waybar/power.sh"
+    "on-click": "bash ~/.config/waybar/status/power.sh"
   }
 }

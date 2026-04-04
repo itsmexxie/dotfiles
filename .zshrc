@@ -45,6 +45,7 @@ bindkey "^[[1;5C" forward-word # I'm just too used to use ctrl + arrows to jump 
 bindkey "^[[1;5D" backward-word
 
 # Aliases
+alias ac="arduino-cli"
 alias c="clear"
 alias ls="ls --color"
 alias nnn="NNN_FIFO='/tmp/nnn.fifo' NNN_PLUG='p:preview-tui;r:qpdfrotate' nnn -P p"
@@ -56,8 +57,3 @@ alias phpdoc="docker run --rm -v ${PWD}:/data phpdoc/phpdoc:3"
 
 # .local/bin
 export PATH="$PATH:/home/itsmexxie/.local/bin"
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

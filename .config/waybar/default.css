@@ -5,7 +5,7 @@
 #waybar {
   color: @text;
   background: @base;
-  font-family: "NotoSans Nerd Font";
+  font-family: "FiraCode Nerd Font";
   font-size: 14px;
 }
 

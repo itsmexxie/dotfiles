@@ -1,0 +1,35 @@
+include "input.kdl"
+include "layout.kdl"
+include "animations.kdl"
+include "binds.kdl"
+include "windows.kdl"
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+environment {
+  XDG_CURRENT_DESKTOP "niri"
+}
+
+screenshot-path "~/pictures/screenshots/screenshot from %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+// Override to disable super+tab
+recent-windows {
+    binds {
+        Alt+Tab         { next-window scope="output"; }
+        Alt+Shift+Tab   { previous-window scope="output"; }
+        Alt+grave       { next-window filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
+   }
+}

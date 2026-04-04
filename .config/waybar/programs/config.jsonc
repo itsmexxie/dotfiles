@@ -2,7 +2,7 @@
   "include": "~/.config/waybar/default.jsonc",
   "position": "bottom",
   "modules-left": ["hyprland/window"],
-  "modules-right": ["tray", "hyprland/language"],
+  "modules-right": ["tray", "niri/language"],
   "hyprland/window": {
     "format": "{}",
     "rewrite": {
@@ -11,7 +11,13 @@
     },
     "separate-outputs": true
   },
-  "hyprland/language": {
+  "tray": {
+    "spacing": 4
+  },
+//   "hyprland/language": {
+//     "format": "󰌌 {}"
+//   }
+  "niri/language": {
     "format": "󰌌 {}"
   }
 }

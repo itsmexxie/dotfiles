@@ -1,0 +1,15 @@
+input {
+    keyboard {
+        xkb {
+    	    layout "us,cz"
+            options "grp:alt_space_toggle"
+        }
+
+        numlock
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+}
